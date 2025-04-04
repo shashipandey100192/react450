@@ -14,6 +14,7 @@ export function About1()
         <div>
             <h1 style={{color:'red',backgroundColor:'orange'}}>this is my page</h1>
             <p className="first">this is external css link</p>
+            <div className="second">use of git</div>
         </div>
     )
 }
