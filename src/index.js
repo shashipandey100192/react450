@@ -6,6 +6,8 @@ import "./style.css";
 import Abc from './About';
 import { About1 } from './About';
 import Mybootstrappage from './Mybootstrappage';
+import Myreactbootstrap from './Myreactbootstrap';
+import Muipage from './Muipage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,6 +18,10 @@ root.render(
     <Abc></Abc>
     <About1></About1>
     <Mybootstrappage></Mybootstrappage>
+    <h1>react bootstrap</h1>
+    <Myreactbootstrap></Myreactbootstrap>
+    <h1>MUI components</h1>
+    <Muipage></Muipage>
 
   </React.StrictMode>
 );
