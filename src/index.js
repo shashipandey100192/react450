@@ -18,6 +18,9 @@ root.render(
         <Route path='' element={<Welcomepage/>}></Route>
         <Route path='userlogin' element={<User_Loginpage/>}></Route>
         <Route path='registor' element={<User_Registorpage/>}></Route>
+        <Route path='landing' element={<User_Landing/>}></Route>
+        
+
 
     </Routes>
    </BrowserRouter>

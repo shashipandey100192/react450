@@ -28,7 +28,8 @@ function User_Loginpage() {
                             <div className='col-md-12 text-center'>
                                 <div class="mb-3">
                                    
-                                    <input type="button" class="btn btn-success" value="login"/>
+                                    {/* <input type="button" class="btn btn-success" value="login"/> */}
+                                    <Link to="/landing" className='ms-3 btn btn-primary'>fake login</Link>
                                     <input type="button" class="btn btn-danger ms-3" value="cancel"/>
                                     <Link to="/registor" className='ms-3'>New User</Link>
                                 </div>
