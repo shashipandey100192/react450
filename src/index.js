@@ -8,6 +8,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import User_Landing from './appmodules/users/dashboard/User_Landing';
 import User_Loginpage from './appmodules/users/auth/User_Loginpage';
 import User_Registorpage from './appmodules/users/auth/User_Registorpage';
+import Myexprpage from './appmodules/users/dashboard/Myexprpage';
+import User_Mainpage from './appmodules/users/dashboard/User_Mainpage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,10 +20,12 @@ root.render(
         <Route path='' element={<Welcomepage/>}></Route>
         <Route path='userlogin' element={<User_Loginpage/>}></Route>
         <Route path='registor' element={<User_Registorpage/>}></Route>
-        <Route path='landing' element={<User_Landing/>}></Route>
+        <Route path='landing' element={<User_Landing/>}>
+            <Route path='' element={<User_Mainpage/>}></Route>
+            <Route path='aboutjsx' element={<Myexprpage/>}></Route>
         
-
-
+        </Route>
+        
     </Routes>
    </BrowserRouter>
 

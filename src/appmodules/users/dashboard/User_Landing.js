@@ -1,7 +1,7 @@
 import React from 'react'
 import App_Header from '../../shares/App_Header'
 import App_Sidebar from '../../shares/App_Sidebar'
-import User_Mainpage from './User_Mainpage'
+import { Outlet } from 'react-router-dom'
 
 function User_Landing() {
   return (
@@ -18,7 +18,7 @@ function User_Landing() {
         </div>
         <div className='col-md-10'>
           <div className='card'>
-           <User_Mainpage></User_Mainpage>
+            <Outlet></Outlet>
           </div>
         </div>
       </div>
