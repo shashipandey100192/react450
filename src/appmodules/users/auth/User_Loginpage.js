@@ -1,8 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { FaUserAlt } from "react-icons/fa";
+import { ToastContainer, toast } from 'react-toastify';
 
 function User_Loginpage() {
+    const mysms = ()=>{
+        toast.success("welcome to react",{position: "top-left",theme: "dark",autoClose: 1000});
+    }
+
     return (
         <div className='container mt-5'>
             <div className='row justify-content-center'>
@@ -17,6 +22,7 @@ function User_Loginpage() {
                                 <div class="mb-3">
                                     <label class="form-label">Email address</label>
                                     <input type="email" class="form-control" />
+                                    <ToastContainer/>
                                 </div>
                             </div>
                             <div className='col-md-12'>
@@ -32,6 +38,7 @@ function User_Loginpage() {
                                     <Link to="/landing" className='ms-3 btn btn-primary'>fake login</Link>
                                     <input type="button" class="btn btn-danger ms-3" value="cancel"/>
                                     <Link to="/registor" className='ms-3'>New User</Link>
+                                    <button type='button' onClick={mysms}> show message</button>
                                 </div>
                                 </div>
                         </div>

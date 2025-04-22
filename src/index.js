@@ -11,6 +11,7 @@ import User_Registorpage from './appmodules/users/auth/User_Registorpage';
 import Myexprpage from './appmodules/users/dashboard/Myexprpage';
 import User_Mainpage from './appmodules/users/dashboard/User_Mainpage';
 import Myaxiospage from './appmodules/users/dashboard/Myaxiospage';
+import Productdetailspage from './appmodules/users/dashboard/Productdetailspage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -25,6 +26,7 @@ root.render(
             <Route path='' element={<User_Mainpage/>}></Route>
             <Route path='aboutjsx' element={<Myexprpage/>}></Route>
             <Route path='axiosapi' element={<Myaxiospage/>}></Route>
+            <Route path='axiosapi/productdetails/:id' element={<Productdetailspage/>}></Route>
         
         </Route>
         
