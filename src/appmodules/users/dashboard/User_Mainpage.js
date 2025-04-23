@@ -1,5 +1,6 @@
 import React from 'react'
 import {user} from '../../Mydata.js';
+import Mygraphpage from './Mygraphpage.js';
 console.log(user);
 
 function User_Mainpage() {
@@ -32,11 +33,7 @@ function User_Mainpage() {
       <div className='row'>
         <div className='col-md-7'>
           <div className='card'>
-            <h1>Graph</h1>
-            <h1>Graph</h1>
-            <h1>Graph</h1>
-            <h1>Graph</h1>
-            <h1>Graph</h1>
+            <Mygraphpage></Mygraphpage>
             
           </div>
         </div>

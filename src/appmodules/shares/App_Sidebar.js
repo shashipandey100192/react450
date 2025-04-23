@@ -18,7 +18,7 @@ function App_Sidebar() {
           <li><Link to="/landing" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Main</Link></li>
             <li><Link to="aboutjsx" class="link-body-emphasis d-inline-flex text-decoration-none rounded">JSX</Link></li>
             <li><Link to="axiosapi" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Axios API</Link></li>
-            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Updates</a></li>
+            <li><Link to="mychart" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Graph</Link></li>
             <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Reports</a></li>
           </ul>
         </div>
