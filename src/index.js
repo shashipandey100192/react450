@@ -13,6 +13,7 @@ import User_Mainpage from './appmodules/users/dashboard/User_Mainpage';
 import Myaxiospage from './appmodules/users/dashboard/Myaxiospage';
 import Productdetailspage from './appmodules/users/dashboard/Productdetailspage';
 import Mygraphpage from './appmodules/users/dashboard/Mygraphpage';
+import Mainbranch from './appmodules/users/dashboard/Mainbranch';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -29,6 +30,7 @@ root.render(
             <Route path='axiosapi' element={<Myaxiospage/>}></Route>
             <Route path='axiosapi/productdetails/:id' element={<Productdetailspage/>}></Route>
             <Route path='mychart' element={<Mygraphpage/>}></Route>
+            <Route path='myprops' element={<Mainbranch/>}></Route>
         
         </Route>
         
