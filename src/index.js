@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense,lazy } from 'react';
 import ReactDOM from 'react-dom/client';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.js";
@@ -14,6 +14,8 @@ import Myaxiospage from './appmodules/users/dashboard/Myaxiospage';
 import Productdetailspage from './appmodules/users/dashboard/Productdetailspage';
 import Mygraphpage from './appmodules/users/dashboard/Mygraphpage';
 import Mainbranch from './appmodules/users/dashboard/Mainbranch';
+// import Myloading from './appmodules/users/dashboard/Myloading';
+const Myloading = lazy(()=>import('./appmodules/users/dashboard/Myloading'));
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -31,6 +33,11 @@ root.render(
             <Route path='axiosapi/productdetails/:id' element={<Productdetailspage/>}></Route>
             <Route path='mychart' element={<Mygraphpage/>}></Route>
             <Route path='myprops' element={<Mainbranch/>}></Route>
+            <Route path='lazypage' element={
+              <Suspense fallback={<h1 className='loading'>Page is loading...</h1>}>
+                <Myloading></Myloading>
+              </Suspense>
+            }></Route>
         
         </Route>
         

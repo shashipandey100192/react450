@@ -10,6 +10,7 @@ const [product, setproduct]=useState([])
         axios.get('https://dummyjson.com/products').then((d)=>{
             // console.log(d.data.products);
             setproduct(d.data.products)
+            localStorage.setItem("myapidata",JSON.stringify(d.data.products));
         })
     }
     useEffect(()=>{

@@ -66,3 +66,10 @@ body {
   {
     min-height: 90vh;
   }
+  .loading
+  {
+    background-color: red;
+    padding:50px;
+    text-align: center;
+    color:white;
+  }
