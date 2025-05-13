@@ -21,6 +21,7 @@ function App_Sidebar() {
             <li><Link to="mychart" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Graph</Link></li>
             <li><Link to="myprops" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Props</Link></li>
             <li><Link to="lazypage" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Lazyloading</Link></li>
+             <li><Link to="myredux" class="link-body-emphasis d-inline-flex text-decoration-none rounded">redux</Link></li>
             <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Reports</a></li>
           </ul>
         </div>

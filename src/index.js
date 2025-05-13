@@ -1,4 +1,4 @@
-import React, { Suspense,lazy } from 'react';
+import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom/client';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.js";
@@ -14,36 +14,41 @@ import Myaxiospage from './appmodules/users/dashboard/Myaxiospage';
 import Productdetailspage from './appmodules/users/dashboard/Productdetailspage';
 import Mygraphpage from './appmodules/users/dashboard/Mygraphpage';
 import Mainbranch from './appmodules/users/dashboard/Mainbranch';
+import { Provider } from 'react-redux';
+import { mystore } from './appmodules/myredux/Myactionstore';
+import Myreduxpage from './appmodules/myredux/Myreduxpage';
+
 // import Myloading from './appmodules/users/dashboard/Myloading';
-const Myloading = lazy(()=>import('./appmodules/users/dashboard/Myloading'));
+const Myloading = lazy(() => import('./appmodules/users/dashboard/Myloading'));
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <BrowserRouter>
-    <Routes>
-        <Route path='' element={<Welcomepage/>}></Route>
-        <Route path='userlogin' element={<User_Loginpage/>}></Route>
-        <Route path='registor' element={<User_Registorpage/>}></Route>
-        <Route path='landing' element={<User_Landing/>}>
-            <Route path='' element={<User_Mainpage/>}></Route>
-            <Route path='aboutjsx' element={<Myexprpage/>}></Route>
-            <Route path='axiosapi' element={<Myaxiospage/>}></Route>
-            <Route path='axiosapi/productdetails/:id' element={<Productdetailspage/>}></Route>
-            <Route path='mychart' element={<Mygraphpage/>}></Route>
-            <Route path='myprops' element={<Mainbranch/>}></Route>
+    <Provider store={mystore}>
+    <BrowserRouter>
+      <Routes>
+        <Route path='' element={<Welcomepage />}></Route>
+        <Route path='userlogin' element={<User_Loginpage />}></Route>
+        <Route path='registor' element={<User_Registorpage />}></Route>
+        <Route path='landing' element={<User_Landing />}>
+          <Route path='' element={<User_Mainpage />}></Route>
+          <Route path='aboutjsx' element={<Myexprpage />}></Route>
+          <Route path='axiosapi' element={<Myaxiospage />}></Route>
+          <Route path='axiosapi/productdetails/:id' element={<Productdetailspage />}></Route>
+         
+            <Route path='mychart' element={<Mygraphpage />}></Route>
+            <Route path='myprops' element={<Mainbranch />}></Route>
             <Route path='lazypage' element={
               <Suspense fallback={<h1 className='loading'>Page is loading...</h1>}>
                 <Myloading></Myloading>
               </Suspense>
             }></Route>
-        
+             <Route path='myredux' element={<Myreduxpage/>}></Route>
         </Route>
-        
-    </Routes>
-   </BrowserRouter>
-
+      </Routes>
+    </BrowserRouter>
+</Provider>
   </React.StrictMode>
 );
 

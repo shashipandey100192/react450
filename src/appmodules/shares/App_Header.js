@@ -1,6 +1,8 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 
 function App_Header() {
+  const myage = useSelector((state) => state.counter.age)
   return (
     <nav className="navbar navbar-expand-lg bg-primary shadow">
     <div className="container-fluid">
@@ -28,7 +30,7 @@ function App_Header() {
             </ul>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-white disabled" aria-disabled="true">Disabled</a>
+            <a className="nav-link text-white disabled" aria-disabled="true">Disabled {myage}</a>
           </li>
         </ul>
         {/* <form className="d-flex" role="search">

@@ -1,52 +1,52 @@
 export const product = [
     {
-        name:"kumar",
-        phone:"245454",
-        age:10
-  },
-  {
-    name:"kumar",
-    phone:"245454",
-    age:10
-},
-{
-    name:"kumar",
-    phone:"245454",
-    age:10
-},
-{
-    name:"kumar",
-    phone:"245454",
-    age:10
-},
-{
-    name:"kumar",
-    phone:"245454",
-    age:10
-},
-{
-    name:"kumar",
-    phone:"245454",
-    age:10
-},
-{
-    name:"kumar",
-    phone:"245454",
-    age:10
-},
-{
-    name:"kumar",
-    phone:"245454",
-    age:10
-},
-{
-    name:"kumar",
-    phone:"245454",
-    age:10
-},
-{
-    name:"kumar",
-    phone:"245454",
-    age:10
-}
+        name: "kumar",
+        phone: "245454",
+        age: 10
+    },
+    {
+        name: "kumar",
+        phone: "245454",
+        age: 10
+    },
+    {
+        name: "kumar",
+        phone: "245454",
+        age: 10
+    },
+    {
+        name: "kumar",
+        phone: "245454",
+        age: 10
+    },
+    {
+        name: "kumar",
+        phone: "245454",
+        age: 10
+    },
+    {
+        name: "kumar",
+        phone: "245454",
+        age: 10
+    },
+    {
+        name: "kumar",
+        phone: "245454",
+        age: 10
+    },
+    {
+        name: "kumar",
+        phone: "245454",
+        age: 10
+    },
+    {
+        name: "kumar",
+        phone: "245454",
+        age: 10
+    },
+    {
+        name: "kumar",
+        phone: "245454",
+        age: 10
+    }
 ];
